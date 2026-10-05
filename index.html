@@ -1,0 +1,1899 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Proposal Kemitraan Smartfarm Lahan ±8.110 m² — Investor Ready">
+<meta name="author" content="Norman Sandhi">
+
+<title>Proposal Kemitraan Smartfarm — Lahan ±8.110 m²</title>
+
+<style>
+:root{
+  --navy:#0b1f3a;
+  --navy2:#102d52;
+  --gold:#b9934b;
+  --gold2:#d8b86a;
+  --cream:#f7f3e9;
+  --paper:#ffffff;
+  --text:#263241;
+  --muted:#687585;
+  --line:#d9dee5;
+  --green:#28724b;
+  --red:#a94747;
+  --blue:#315f91;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  background:#dfe4ea;
+  color:var(--text);
+  font-family:Arial,Helvetica,sans-serif;
+  line-height:1.55;
+}
+
+/* =========================
+   TOOLBAR
+========================= */
+
+.toolbar{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:9999;
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  padding:12px;
+  background:rgba(11,31,58,.97);
+  box-shadow:0 2px 12px rgba(0,0,0,.25);
+}
+
+.toolbar button{
+  border:1px solid rgba(255,255,255,.2);
+  border-radius:7px;
+  padding:10px 18px;
+  background:var(--gold);
+  color:#fff;
+  font-weight:700;
+  cursor:pointer;
+}
+
+.toolbar button.secondary{
+  background:#fff;
+  color:var(--navy);
+}
+
+.toolbar button:hover{
+  opacity:.9;
+}
+
+/* =========================
+   PAGE
+========================= */
+
+.page{
+  width:210mm;
+  min-height:297mm;
+  margin:18mm auto;
+  padding:17mm 18mm 16mm;
+  background:var(--paper);
+  position:relative;
+  overflow:hidden;
+  box-shadow:0 4px 18px rgba(0,0,0,.14);
+  page-break-after:always;
+  break-after:page;
+}
+
+.page:last-child{
+  page-break-after:auto;
+  break-after:auto;
+}
+
+.page-number{
+  position:absolute;
+  bottom:7mm;
+  right:18mm;
+  font-size:9pt;
+  color:#89929d;
+}
+
+.page-footer{
+  position:absolute;
+  bottom:7mm;
+  left:18mm;
+  font-size:8pt;
+  color:#9aa2ab;
+  letter-spacing:.4px;
+}
+
+h1,h2,h3,h4{
+  margin-top:0;
+  color:var(--navy);
+}
+
+h1{
+  font-size:28pt;
+  line-height:1.12;
+}
+
+h2{
+  font-size:20pt;
+  margin-bottom:8mm;
+}
+
+h3{
+  font-size:13pt;
+  margin-bottom:3mm;
+}
+
+h4{
+  font-size:10.5pt;
+  margin-bottom:2mm;
+}
+
+p{
+  margin:0 0 4mm;
+}
+
+ul,ol{
+  margin-top:2mm;
+  padding-left:6mm;
+}
+
+li{
+  margin-bottom:2.2mm;
+}
+
+.small{
+  font-size:9pt;
+}
+
+.muted{
+  color:var(--muted);
+}
+
+.gold{
+  color:var(--gold);
+}
+
+.center{
+  text-align:center;
+}
+
+.right{
+  text-align:right;
+}
+
+.justify{
+  text-align:justify;
+}
+
+/* =========================
+   COVER
+========================= */
+
+.cover{
+  background:
+    linear-gradient(145deg,rgba(11,31,58,.98),rgba(16,45,82,.96)),
+    var(--navy);
+  color:#fff;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+
+.cover h1,
+.cover h2,
+.cover h3,
+.cover p{
+  color:#fff;
+}
+
+.cover-top{
+  border-left:5px solid var(--gold);
+  padding-left:8mm;
+  margin-top:8mm;
+}
+
+.cover-kicker{
+  font-size:10pt;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  color:var(--gold2);
+  font-weight:bold;
+}
+
+.cover-title{
+  font-size:31pt;
+  max-width:165mm;
+  margin:8mm 0 5mm;
+}
+
+.cover-subtitle{
+  font-size:15pt;
+  line-height:1.45;
+  max-width:160mm;
+  color:#e9edf2!important;
+}
+
+.cover-box{
+  border:1px solid rgba(216,184,106,.5);
+  background:rgba(255,255,255,.05);
+  padding:7mm;
+  border-radius:6px;
+}
+
+.cover-bottom{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12mm;
+  align-items:end;
+}
+
+.cover-meta{
+  font-size:10pt;
+  color:#dbe2eb;
+}
+
+.cover-meta strong{
+  color:#fff;
+}
+
+.logo-mark{
+  width:28mm;
+  height:28mm;
+  border:2px solid var(--gold2);
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:var(--gold2);
+  font-size:10pt;
+  font-weight:bold;
+  letter-spacing:1px;
+  margin-bottom:8mm;
+}
+
+/* =========================
+   SECTION HEADER
+========================= */
+
+.section-kicker{
+  color:var(--gold);
+  text-transform:uppercase;
+  letter-spacing:2px;
+  font-size:8.5pt;
+  font-weight:bold;
+  margin-bottom:2mm;
+}
+
+.rule{
+  width:28mm;
+  height:2px;
+  background:var(--gold);
+  margin:3mm 0 7mm;
+}
+
+.lead{
+  font-size:12pt;
+  line-height:1.7;
+}
+
+.highlight{
+  background:var(--cream);
+  border-left:4px solid var(--gold);
+  padding:5mm;
+  margin:5mm 0;
+}
+
+.navy-box{
+  background:var(--navy);
+  color:#fff;
+  padding:6mm;
+  border-radius:6px;
+}
+
+.navy-box h3,
+.navy-box strong{
+  color:#fff;
+}
+
+.navy-box p{
+  color:#eef2f6;
+}
+
+.green-box{
+  background:#edf7f1;
+  border-left:4px solid var(--green);
+  padding:5mm;
+  margin:4mm 0;
+}
+
+.warning{
+  background:#fff7e8;
+  border-left:4px solid #c38b26;
+  padding:5mm;
+  margin:4mm 0;
+}
+
+.red-box{
+  background:#fff0f0;
+  border-left:4px solid var(--red);
+  padding:5mm;
+  margin:4mm 0;
+}
+
+/* =========================
+   TABLE
+========================= */
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:4mm 0 5mm;
+  font-size:9.2pt;
+}
+
+th{
+  background:var(--navy);
+  color:#fff;
+  text-align:left;
+  padding:3mm;
+  font-weight:700;
+}
+
+td{
+  border:1px solid var(--line);
+  padding:2.7mm 3mm;
+  vertical-align:top;
+}
+
+tr:nth-child(even) td{
+  background:#fafbfd;
+}
+
+.total td{
+  font-weight:700;
+  background:#f3f5f8!important;
+}
+
+.money{
+  white-space:nowrap;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.grid-2{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:5mm;
+}
+
+.grid-3{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  gap:4mm;
+}
+
+.card{
+  border:1px solid var(--line);
+  border-radius:6px;
+  padding:5mm;
+  background:#fff;
+}
+
+.card .number{
+  font-size:19pt;
+  font-weight:bold;
+  color:var(--gold);
+  margin-bottom:1mm;
+}
+
+.card .label{
+  font-size:8.5pt;
+  color:var(--muted);
+  text-transform:uppercase;
+  letter-spacing:.5px;
+}
+
+/* =========================
+   FLOW
+========================= */
+
+.flow{
+  display:flex;
+  align-items:stretch;
+  gap:2mm;
+  margin:6mm 0;
+}
+
+.flow-item{
+  flex:1;
+  position:relative;
+  background:#f4f6f8;
+  border:1px solid var(--line);
+  padding:4mm 3mm;
+  text-align:center;
+  font-size:8.5pt;
+  border-radius:5px;
+}
+
+.flow-item:not(:last-child)::after{
+  content:"›";
+  position:absolute;
+  right:-4mm;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:17pt;
+  color:var(--gold);
+  font-weight:bold;
+  z-index:2;
+}
+
+/* =========================
+   SIGNATURE
+========================= */
+
+.signature{
+  margin-top:10mm;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12mm;
+}
+
+.signature-box{
+  min-height:43mm;
+  border-top:1px solid #333;
+  padding-top:3mm;
+}
+
+.signature-box strong{
+  display:block;
+  margin-bottom:18mm;
+}
+
+/* =========================
+   PRINT
+========================= */
+
+@page{
+  size:A4;
+  margin:0;
+}
+
+@media print{
+
+  body{
+    background:#fff;
+  }
+
+  .toolbar{
+    display:none!important;
+  }
+
+  .page{
+    width:210mm;
+    height:297mm;
+    min-height:297mm;
+    margin:0;
+    padding:17mm 18mm 16mm;
+    box-shadow:none;
+    overflow:hidden;
+  }
+
+  .page-number,
+  .page-footer{
+    position:absolute;
+  }
+
+  *{
+    -webkit-print-color-adjust:exact!important;
+    print-color-adjust:exact!important;
+  }
+}
+
+@media(max-width:900px){
+
+  .page{
+    width:100%;
+    min-height:auto;
+    margin:70px 0 15px;
+    padding:35px 25px 50px;
+  }
+
+  .grid-2,
+  .grid-3,
+  .cover-bottom,
+  .signature{
+    grid-template-columns:1fr;
+  }
+
+  .flow{
+    flex-direction:column;
+  }
+
+  .flow-item:not(:last-child)::after{
+    content:"↓";
+    right:50%;
+    top:auto;
+    bottom:-8mm;
+    transform:translateX(50%);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- =========================================================
+     TOOLBAR
+========================================================= -->
+
+<div class="toolbar">
+  <button onclick="window.print()">🖨️ Cetak / Simpan PDF</button>
+  <button class="secondary" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    ↑ Ke Atas
+  </button>
+</div>
+
+
+<!-- =========================================================
+     HALAMAN 1 — COVER
+========================================================= -->
+
+<section class="page cover">
+
+  <div class="cover-top">
+
+    <div class="logo-mark">SF</div>
+
+    <div class="cover-kicker">
+      Proposal Kemitraan & Investasi
+    </div>
+
+    <h1 class="cover-title">
+      SMARTFARM<br>
+      POULTRY PROJECT
+    </h1>
+
+    <p class="cover-subtitle">
+      Pengembangan Closed House Terintegrasi
+      di atas lahan ±8.110 m²
+    </p>
+
+    <div class="rule"></div>
+
+    <p style="max-width:155mm;">
+      <strong>Model kerja sama:</strong><br>
+      Pemilik Lahan + Investor/Pemodal +
+      Smartfarm/Integrator
+    </p>
+
+  </div>
+
+
+  <div class="cover-box">
+
+    <div class="grid-3">
+
+      <div>
+        <div class="cover-kicker">Lahan</div>
+        <strong style="font-size:16pt;">±8.110 m²</strong>
+      </div>
+
+      <div>
+        <div class="cover-kicker">Tahap Awal</div>
+        <strong style="font-size:16pt;">±20.000 ekor</strong>
+      </div>
+
+      <div>
+        <div class="cover-kicker">Model</div>
+        <strong style="font-size:16pt;">Closed House</strong>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="cover-bottom">
+
+    <div class="cover-meta">
+      <strong>Pemilik Lahan / Pengusul</strong><br>
+      Norman Sandhi
+    </div>
+
+    <div class="cover-meta right">
+      <strong>Dokumen Investor Ready</strong><br>
+      Oktober 2026
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     HALAMAN 2 — EXECUTIVE SUMMARY
+========================================================= -->
+
+<section class="page">
+
+  <div class="section-kicker">01 — Executive Summary</div>
+  <h2>Ringkasan Eksekutif</h2>
+  <div class="rule"></div>
+
+  <p class="lead">
+    Proposal ini menawarkan pengembangan usaha peternakan ayam broiler
+    berbasis <strong>closed house</strong> di atas lahan ±8.110 m².
+    Konsepnya dirancang untuk mempertemukan tiga fungsi yang berbeda:
+    aset lahan, modal pembangunan, dan sistem operasional kemitraan.
+  </p>
+
+  <div class="highlight">
+    <strong>Inti penawaran:</strong><br>
+    Pemilik lahan menyediakan lahan.
+    Investor menyediakan modal pembangunan kandang dan infrastruktur.
+    Smartfarm/Integrator menyediakan sistem kemitraan peternakan,
+    termasuk DOC, pakan, program kesehatan, pendampingan teknis,
+    serta mekanisme panen/offtake sesuai perjanjian.
+  </div>
+
+  <div class="grid-2">
+
+    <div class="card">
+      <div class="number">±8.110</div>
+      <div class="label">Luas lahan</div>
+      <p>
+        Aset tanah menjadi kontribusi utama pemilik lahan
+        tanpa harus dijual kepada investor.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="number">20.000</div>
+      <div class="label">Target kapasitas awal</div>
+      <p>
+        Target indikatif dua unit closed house
+        dengan total luasan bangunan ±1.200 m².
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="number">50 : 50</div>
+      <div class="label">Pembagian hasil proyek</div>
+      <p>
+        Setelah kewajiban kepada integrator dan
+        biaya proyek yang disepakati diselesaikan.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="number">3</div>
+      <div class="label">Fungsi utama</div>
+      <p>
+        Lahan — Modal — Sistem Operasional Kemitraan.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="green-box">
+    <strong>Prinsip proposal:</strong>
+    proyek tidak langsung dibangun hanya berdasarkan asumsi.
+    Pembangunan dilakukan setelah struktur kemitraan, RAB,
+    settlement panen, proyeksi produksi, dan kelayakan finansial
+    memperoleh persetujuan para pihak.
+  </div>
+
+  <p class="small muted">
+    Seluruh angka dalam proposal ini bersifat indikatif untuk keperluan
+    penjajakan investasi. Angka final wajib dikonfirmasi melalui
+    survey teknis, RAB, penawaran vendor, kontrak integrator,
+    dan studi kelayakan proyek.
+  </p>
+
+</section>
+
+
+<!-- =========================================================
+     HALAMAN 3 — OPPORTUNITY & ASSET
+========================================================= -->
+
+<section class="page">
+
+  <div class="section-kicker">02 — Asset & Opportunity</div>
+  <h2>Aset Lahan & Peluang Pengembangan</h2>
+  <div class="rule"></div>
+
+  <p>
+    Pemilik memiliki lahan ±8.110 m² yang diarahkan untuk dikembangkan
+    menjadi fasilitas peternakan broiler modern. Lahan tidak ditawarkan
+    untuk dijual, melainkan sebagai <strong>kontribusi aset</strong>
+    dalam struktur kerja sama jangka menengah/panjang.
+  </p>
+
+  <div class="grid-2">
+
+    <div class="card">
+      <h3>Kontribusi Pemilik</h3>
+      <ul>
+        <li>Lahan ±8.110 m².</li>
+        <li>Akses penggunaan lahan selama masa kerja sama.</li>
+        <li>Dukungan legalitas dan administrasi aset.</li>
+        <li>Partisipasi dalam pengawasan proyek.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Kebutuhan Investor</h3>
+      <ul>
+        <li>Modal pembangunan closed house.</li>
+        <li>Peralatan kandang dan utilitas.</li>
+        <li>Infrastruktur pendukung.</li>
+        <li>Modal sesuai struktur investasi yang disepakati.</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <h3 style="margin-top:7mm;">Rencana Pemanfaatan Lahan</h3>
+
+  <table>
+    <tr>
+      <th>Komponen</th>
+      <th>Indikasi</th>
+      <th>Fungsi</th>
+    </tr>
+    <tr>
+      <td>Closed House</td>
+      <td>±1.200 m²</td>
+      <td>Dua unit × ±600 m²</td>
+    </tr>
+    <tr>
+      <td>Akses & kendaraan</td>
+      <td>Area tersisa</td>
+      <td>Mobilisasi, loading dan biosecurity</td>
+    </tr>
+    <tr>
+      <td>Utilitas</td>
+      <td>Area tersisa</td>
+      <td>Listrik, air, genset dan sistem pendukung</td>
+    </tr>
+    <tr>
+      <td>Gudang & fasilitas pendukung</td>
+      <td>Disesuaikan desain</td>
+      <td>Penyimpanan dan operasional</td>
+    </tr>
+    <tr>
+      <td>Buffer/biosecurity/waste</td>
+      <td>Disesuaikan desain</td>
+      <td>Pengendalian risiko lingkungan</td>
+    </tr>
+    <tr>
+      <td>Cadangan ekspansi</td>
+      <td>Sisa lahan</td>
+      <td>Peluang peningkatan kapasitas</td>
+    </tr>
+  </table>
+
+  <div class="warning">
+    <strong>Catatan:</strong>
+    layout final tidak ditentukan hanya berdasarkan luas lahan.
+    Desain harus mempertimbangkan akses kendaraan, arah angin,
+    drainase, jarak antarbangunan, biosecurity, sumber air,
+    listrik, lingkungan sekitar, dan persyaratan teknis integrator.
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     HALAMAN 4 — STRUCTURE
+========================================================= -->
+
+<section class="page">
+
+  <div class="section-kicker">03 — Partnership Structure</div>
+  <h2>Struktur Kerja Sama Tiga Fungsi</h2>
+  <div class="rule"></div>
+
+  <p>
+    Model ini sengaja memisahkan <strong>kontribusi modal/aset</strong>
+    dari <strong>fungsi operasional integrator</strong>.
+    Dengan demikian, tidak terjadi kesalahpahaman bahwa ketiga pihak
+    otomatis memperoleh 1/3 bagian keuntungan.
+  </p>
+
+  <div class="flow">
+
+    <div class="flow-item">
+      <strong>PEMILIK LAHAN</strong><br><br>
+      Menyediakan aset tanah
+    </div>
+
+    <div class="flow-item">
+      <strong>INVESTOR</strong><br><br>
+      Menyediakan modal CAPEX
+    </div>
+
+    <div class="flow-item">
+      <strong>SMARTFARM</strong><br><br>
+      Menyediakan sistem kemitraan
+    </div>
+
+    <div class="flow-item">
+      <strong>PRODUKSI</strong><br><br>
+      Closed house broiler
+    </div>
+
+    <div class="flow-item">
+      <strong>PANEN</strong><br><br>
+      Settlement & pembagian hasil
+    </div>
+
+  </div>
+
+  <div class="grid-3">
+
+    <div class="navy-box">
+      <h3>Pemilik Lahan</h3>
+      <p>
+        Kontribusi utama berupa lahan ±8.110 m².
+        Tidak menjual tanah kepada investor.
+      </p>
+    </div>
+
+    <div class="navy-box">
+      <h3>Investor</h3>
+      <p>
+        Membiayai pembangunan fasilitas dan investasi
+        yang disepakati dalam term sheet.
+      </p>
+    </div>
+
+    <div class="navy-box">
+      <h3>Smartfarm / Integrator</h3>
+      <p>
+        Menyediakan sistem produksi dan kemitraan:
+        DOC, pakan, kesehatan, teknis dan mekanisme panen.
+      </p>
+    </div>
+
+  </div>
+
+  <h3 style="margin-top:8mm;">Prinsip Ekonomi</h3>
+
+  <table>
+    <tr>
+      <th>Pihak</th>
+      <th>Kontribusi</th>
+      <th>Imbalan Ekonomi</th>
+    </tr>
+    <tr>
+      <td>Pemilik Lahan</td>
+      <td>Lahan</td>
+      <td>50% hasil proyek yang dapat dibagikan</td>
+    </tr>
+    <tr>
+      <td>Investor</td>
+      <td>Modal CAPEX</td>
+      <td>50% hasil proyek yang dapat dibagikan + mekanisme prioritas pengembalian modal</td>
+    </tr>
+    <tr>
+      <td>Smartfarm / Integrator</td>
+      <td>DOC, pakan, kesehatan, teknis, sistem kemitraan/offtake</td>
+      <td>Settlement biaya sesuai kontrak kemitraan</td>
+    </tr>
+  </table>
+
+  <div class="highlight">
+    <strong>Dengan demikian:</strong>
+    Smartfarm/Integrator tidak otomatis mengambil bagian 30% atau 33%
+    dari laba proyek. Imbalan ekonominya mengikuti kontrak kemitraan
+    dan komponen settlement yang disepakati.
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     HALAMAN 5 — TECHNICAL MASTERPLAN
+========================================================= -->
+
+<section class="page">
+
+  <div class="section-kicker">04 — Technical Masterplan</div>
+  <h2>Rencana Teknis Tahap I</h2>
+  <div class="rule"></div>
+
+  <div class="grid-2">
+
+    <div>
+      <h3>Konsep Bangunan</h3>
+      <table>
+        <tr>
+          <td>Jumlah kandang</td>
+          <td>2 unit</td>
+        </tr>
+        <tr>
+          <td>Ukuran indikatif</td>
+          <td>10 m × 60 m/unit</td>
+        </tr>
+        <tr>
+          <td>Luas/unit</td>
+          <td>±600 m²</td>
+        </tr>
+        <tr>
+          <td>Total luas kandang</td>
+          <td>±1.200 m²</td>
+        </tr>
+        <tr>
+          <td>Kapasitas indikatif</td>
+          <td>±20.000 ekor/cycle</td>
+        </tr>
+      </table>
+    </div>
+
+    <div>
+      <h3>Peralatan Utama</h3>
+      <ul>
+        <li>Cooling pad / ventilation system.</li>
+        <li>Exhaust fan.</li>
+        <li>Automatic feeding system.</li>
+        <li>Automatic drinking system.</li>
+        <li>Controller dan sensor lingkungan.</li>
+        <li>Panel listrik dan backup power.</li>
+        <li>Biosecurity entrance.</li>
+        <li>Peralatan pendukung operasional.</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <h3 style="margin-top:6mm;">Tahapan Kapasitas</h3>
+
+  <div class="flow">
+
+    <div class="flow-item">
+      <strong>FASE I</strong><br>
+      ±20.000 ekor
+    </div>
+
+    <div class="flow-item">
+      <strong>FASE II</strong><br>
+      ±30.000 ekor
+    </div>
+
+    <div class="flow-item">
+      <strong>FASE III</strong><br>
+      ±40.000 ekor
+    </div>
+
+  </div>
+
+  <div class="green-box">
+    <strong>Strategi pengembangan:</strong>
+    kapasitas tidak langsung dimaksimalkan.
+    Ekspansi dilakukan berdasarkan KPI produksi, mortalitas,
+    FCR, performa panen, stabilitas settlement integrator,
+    dan kemampuan manajemen.
+  </div>
+
+  <h3>Feasibility Gate</h3>
+
+  <ol>
+    <li>Verifikasi legalitas dan status lahan.</li>
+    <li>Survey teknis lokasi.</li>
+    <li>Persetujuan konsep oleh integrator.</li>
+    <li>Finalisasi RAB pembangunan.</li>
+    <li>Finalisasi mekanisme settlement panen.</li>
+    <li>Financial feasibility dan investor approval.</li>
+    <li>Penandatanganan perjanjian.</li>
+    <li>Pembangunan.</li>
+  </ol>
+
+</section>
+
+
+<!-- =========================================================
+     HALAMAN 6 — SMARTFARM INTEGRATOR
+========================================================= -->
+
+<section class="page">
+
+  <div class="section-kicker">05 — Integrator Model</div>
+  <h2>Peran Smartfarm / Integrator</h2>
+  <div class="rule"></div>
+
+  <p class="lead">
+    Smartfarm/Integrator diposisikan sebagai
+    <strong>operational & production system partner</strong>,
+    bukan sekadar pembeli hasil panen.
+  </p>
+
+  <div class="grid-2">
+
+    <div class="card">
+      <h3>Input Produksi</h3>
+      <ul>
+        <li>DOC.</li>
+        <li>Pakan.</li>
+        <li>Program vaksinasi.</li>
+        <li>Obat dan kesehatan.</li>
+        <li>Program teknis pemeliharaan.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Pendampingan</h3>
+      <ul>
+        <li>Technical service.</li>
+        <li>Monitoring performa.</li>
+        <li>Kontrol konsumsi pakan.</li>
+        <li>Monitoring mortalitas.</li>
+        <li>Evaluasi hasil produksi.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Panen</h3>
+      <ul>
+        <li>Jadwal panen.</li>
+        <li>Penimbangan.</li>
+        <li>Administrasi settlement.</li>
+        <li>Mekanisme pembayaran.</li>
+        <li>Offtake sesuai kontrak.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Kontrol Risiko</h3>
+      <ul>
+        <li>Biosecurity.</li>
+        <li>Standar pemeliharaan.</li>
+        <li>Evaluasi performa.</li>
+        <li>Pengendalian biaya produksi.</li>
+        <li>Review setiap cycle.</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="navy-box" style="margin-top:7mm;">
+    <h3>Prinsip Settlement</h3>
+    <p>
+      Biaya DOC, pakan, kesehatan dan komponen integrator lainnya
+      yang memang menjadi kewajiban peternak akan dihitung/ditetapkan
+      berdasarkan mekanisme kemitraan dan diselesaikan pada saat panen
+      atau melalui mekanisme pembayaran yang disepakati.
+    </p>
+  </div>
+
+  <div class="warning">
+    <strong>Poin penting bagi investor:</strong>
+    tarif dan formula settlement tidak boleh diasumsikan.
+    Sebelum investasi, Smartfarm/Integrator harus memberikan
+    struktur biaya dan mekanisme settlement secara tertulis.
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     HALAMAN 7 — INVESTMENT
+========================================================= -->
+
+<section class="page">
+
+  <div class="section-kicker">06 — Investment Requirement</div>
+  <h2>Estimasi Kebutuhan Investasi</h2>
+  <div class="rule"></div>
+
+  <p>
+    Angka berikut merupakan <strong>estimasi awal</strong> untuk
+    menyusun kerangka investasi. Nilai final harus berasal dari
+    desain teknis dan RAB aktual.
+  </p>
+
+  <table>
+    <tr>
+      <th>Komponen</th>
+      <th>Estimasi Indikatif</th>
+      <th>Keterangan</th>
+    </tr>
+    <tr>
+      <td>Bangunan closed house</td>
+      <td class="money">Rp1,60–2,00 M</td>
+      <td>Struktur dua unit, tergantung spesifikasi</td>
+    </tr>
+    <tr>
+      <td>Equipment kandang</td>
+      <td class="money">Rp450–600 Jt</td>
+      <td>Feeding, drinking, ventilation, controller</td>
+    </tr>
+    <tr>
+      <td>Utilitas & infrastruktur</td>
+      <td class="money">Rp250–400 Jt</td>
+      <td>Listrik, air, akses, biosecurity, pendukung</td>
+    </tr>
+    <tr>
+      <td>Cadangan / contingency</td>
+      <td class="money">Rp200–300 Jt</td>
+      <td>Disesuaikan RAB</td>
+    </tr>
+    <tr class="total">
+      <td>Total indikatif</td>
+      <td class="money">±Rp2,5–3,0 M</td>
+      <td>Perlu verifikasi vendor</td>
+    </tr>
+  </table>
+
+  <div class="grid-2">
+
+    <div class="green-box">
+      <strong>Yang tidak dilakukan:</strong>
+      investor tidak perlu membeli lahan.
+    </div>
+
+    <div class="green-box">
+      <strong>Yang dilakukan:</strong>
+      investor membiayai aset produktif yang dibangun
+      berdasarkan perjanjian investasi.
+    </div>
+
+  </div>
+
+  <h3 style="margin-top:7mm;">Struktur Penggunaan Modal</h3>
+
+  <ol>
+    <li>Final engineering & site preparation.</li>
+    <li>Pembangunan kandang.</li>
+    <li>Instalasi equipment.</li>
+    <li>Utilitas dan fasilitas pendukung.</li>
+    <li>Commissioning dan testing.</li>
+    <li>Persiapan cycle produksi pertama.</li>
+  </ol>
+
+  <div class="warning">
+    Modal investasi sebaiknya dicairkan secara bertahap berdasarkan
+    milestone pembangunan, bukan sekaligus di awal.
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     HALAMAN 8 — PRODUCTION SIMULATION
+========================================================= -->
+
+<section class="page">
+
+  <div class="section-kicker">07 — Production Simulation</div>
+  <h2>Simulasi Produksi Awal ±20.000 Ekor</h2>
+  <div class="rule"></div>
+
+  <p>
+    Simulasi ini digunakan untuk memahami mekanisme ekonomi proyek,
+    bukan sebagai jaminan keuntungan.
+  </p>
+
+  <table>
+    <tr>
+      <th>Parameter</th>
+      <th>Asumsi</th>
+    </tr>
+    <tr>
+      <td>DOC masuk</td>
+      <td>20.000 ekor</td>
+    </tr>
+    <tr>
+      <td>Mortalitas asumsi</td>
+      <td>5%</td>
+    </tr>
+    <tr>
+      <td>Ayam panen</td>
+      <td>±19.000 ekor</td>
+    </tr>
+    <tr>
+      <td>Bobot rata-rata</td>
+      <td>±1,8 kg/ekor</td>
+    </tr>
+    <tr>
+      <td>Total live weight</td>
+      <td>±34.200 kg</td>
+    </tr>
+  </table>
+
+  <h3>Contoh Sensitivitas Harga Panen</h3>
+
+  <table>
+    <tr>
+      <th>Harga Livebird</th>
+      <th>Estimasi Nilai Panen</th>
+      <th>Catatan</th>
+    </tr>
+    <tr>
+      <td>Rp22.000/kg</td>
+      <td class="money">Rp752,4 Jt</td>
+      <td>Tekanan margin</td>
+    </tr>
+    <tr>
+      <td>Rp25.000/kg</td>
+      <td class="money">Rp855,0 Jt</td>
+      <td>Skenario moderat</td>
+    </tr>
+    <tr>
+      <td>Rp27.000/kg</td>
+      <td class="money">Rp923,4 Jt</td>
+      <td>Skenario lebih baik</td>
+    </tr>
+  </table>
+
+  <div class="red-box">
+    <strong>Penting:</strong>
+    nilai panen bruto bukan laba yang langsung dibagi.
+    Dari nilai tersebut masih terdapat settlement DOC, pakan,
+    kesehatan, biaya integrator dan biaya proyek lain yang telah
+    disepakati.
+  </div>
+
+  <p class="small muted">
+    Angka produksi dan harga di atas hanya contoh model.
+    Harga livebird, performa ayam, FCR, mortalitas, bobot panen,
+    biaya input dan settlement aktual dapat berubah.
+  </p>
+
+</section>
+
+
+<!-- =========================================================
+     HALAMAN 9 — SETTLEMENT
+========================================================= -->
+
+<section class="page">
+
+  <div class="section-kicker">08 — Harvest Settlement</div>
+  <h2>Skema Settlement Hasil Panen</h2>
+  <div class="rule"></div>
+
+  <p class="lead">
+    Inilah mekanisme inti yang membedakan proposal ini dari skema
+    pembagian keuntungan sederhana.
+  </p>
+
+  <div class="flow">
+
+    <div class="flow-item">
+      <strong>PANEN</strong><br>
+      Nilai panen bruto
+    </div>
+
+    <div class="flow-item">
+      <strong>SETTLEMENT</strong><br>
+      DOC + pakan + kesehatan
+    </div>
+
+    <div class="flow-item">
+      <strong>BIAYA PROYEK</strong><br>
+      Sesuai perjanjian
+    </div>
+
+    <div class="flow-item">
+      <strong>SISA</strong><br>
+      Distributable Project Proceeds
+    </div>
+
+    <div class="flow-item">
+      <strong>50 : 50</strong><br>
+      Pemilik + Investor
+    </div>
+
+  </div>
+
+  <h3>Formula Dasar</h3>
+
+  <div class="navy-box">
+    <p style="font-size:12pt;">
+      <strong>
+      Nilai Panen Bruto<br>
+      − Settlement Smartfarm/Integrator<br>
+      − Biaya Proyek yang Disepakati<br>
+      = Distributable Project Proceeds
+      </strong>
+    </p>
+  </div>
+
+  <h3 style="margin-top:7mm;">Komponen Settlement</h3>
+
+  <table>
+    <tr>
+      <th>Komponen</th>
+      <th>Status</th>
+    </tr>
+    <tr>
+      <td>DOC</td>
+      <td>Dipertanggungjawabkan sesuai kontrak kemitraan</td>
+    </tr>
+    <tr>
+      <td>Pakan</td>
+      <td>Dipertanggungjawabkan sesuai konsumsi/ketentuan program</td>
+    </tr>
+    <tr>
+      <td>Obat/vaksin/kesehatan</td>
+      <td>Sesuai program dan kontrak</td>
+    </tr>
+    <tr>
+      <td>Technical service</td>
+      <td>Jika menjadi komponen yang disepakati</td>
+    </tr>
+    <tr>
+      <td>Biaya lain</td>
+      <td>Hanya jika tertulis dan disetujui</td>
+    </tr>
+  </table>
+
+  <div class="warning">
+    <strong>Anti-ambiguity clause:</strong><br>
+    Seluruh komponen biaya yang dapat diperhitungkan dalam settlement
+    wajib ditetapkan secara transparan dan disepakati terlebih dahulu
+    dalam perjanjian kerja sama. Tidak terdapat pengurangan lain di luar
+    komponen biaya yang telah disepakati para pihak.
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     HALAMAN 10 — EXAMPLE SETTLEMENT
+========================================================= -->
+
+<section class="page">
+
+  <div class="section-kicker">09 — Illustrative Waterfall</div>
+  <h2>Contoh Perhitungan Settlement</h2>
+  <div class="rule"></div>
+
+  <p>
+    Contoh berikut sengaja dibuat sederhana agar calon investor dapat
+    melihat mekanisme uang masuk dan uang keluar secara transparan.
+  </p>
+
+  <table>
+    <tr>
+      <th>Komponen</th>
+      <th>Contoh Nilai</th>
+    </tr>
+    <tr>
+      <td>Nilai penjualan panen</td>
+      <td class="money">Rp900.000.000</td>
+    </tr>
+    <tr>
+      <td>DOC</td>
+      <td class="money">− Rp140.000.000</td>
+    </tr>
+    <tr>
+      <td>Pakan</td>
+      <td class="money">− Rp500.000.000</td>
+    </tr>
+    <tr>
+      <td>Kesehatan / obat / vaksin</td>
+      <td class="money">− Rp30.000.000</td>
+    </tr>
+    <tr>
+      <td>Komponen integrator lain</td>
+      <td class="money">− Rp20.000.000</td>
+    </tr>
+    <tr class="total">
+      <td>Distributable Project Proceeds</td>
+      <td class="money">Rp210.000.000</td>
+    </tr>
+  </table>
+
+  <div class="grid-2">
+
+    <div class="navy-box">
+      <h3>Pemilik Lahan</h3>
+      <p style="font-size:17pt;">
+        <strong>Rp105.000.000</strong>
+      </p>
+      <p>50% dari distributable proceeds.</p>
+    </div>
+
+    <div class="navy-box">
+      <h3>Investor</h3>
+      <p style="font-size:17pt;">
+        <strong>Rp105.000.000</strong>
+      </p>
+      <p>50% dari distributable proceeds.</p>
+    </div>
+
+  </div>
+
+  <div class="warning">
+    <strong>Catatan penting:</strong>
+    seluruh angka di halaman ini adalah contoh ilustratif,
+    bukan penawaran harga atau jaminan hasil.
+    Angka sebenarnya harus berasal dari kontrak Smartfarm/Integrator,
+    produksi aktual dan dokumen settlement panen.
+  </div>
+
+  <h3>Settlement Statement</h3>
+
+  <p>
+    Setiap cycle idealnya menghasilkan dokumen settlement yang memuat:
+    jumlah ayam, bobot total, harga, nilai panen, rincian seluruh potongan,
+    nilai distributable, serta pembagian kepada pemilik dan investor.
+  </p>
+
+</section>
+
+
+<!-- =========================================================
+     HALAMAN 11 — CAPITAL RECOVERY
+========================================================= -->
+
+<section class="page">
+
+  <div class="section-kicker">10 — Investor Return</div>
+  <h2>Priority Capital Recovery</h2>
+  <div class="rule"></div>
+
+  <p class="lead">
+    Investor memasukkan modal yang jauh lebih besar dibandingkan
+    kontribusi kas pemilik lahan. Karena itu, struktur kerja sama
+    perlu memberikan mekanisme yang jelas untuk pengembalian modal.
+  </p>
+
+  <h3>Skema yang Ditawarkan untuk Negosiasi</h3>
+
+  <div class="grid-2">
+
+    <div class="card">
+      <div class="number">01</div>
+      <h3>Harvest Settlement</h3>
+      <p>
+        Hasil panen diterima dan seluruh kewajiban
+        integrator diselesaikan terlebih dahulu.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="number">02</div>
+      <h3>Distributable Proceeds</h3>
+      <p>
+        Sisa setelah settlement menjadi dasar pembagian
+        ekonomi proyek.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="number">03</div>
+      <h3>Priority Recovery</h3>
+      <p>
+        Bagian investor dapat diprioritaskan untuk
+        pengembalian modal investasi sampai batas
+        yang disepakati.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="number">04</div>
+      <h3>Normal 50 : 50</h3>
+      <p>
+        Setelah modal investor kembali sesuai ketentuan,
+        pembagian normal 50:50 berjalan selama masa kerja sama.
+      </p>
+    </div>
+
+  </div>
+
+  <h3 style="margin-top:7mm;">Dua Alternatif</h3>
+
+  <table>
+    <tr>
+      <th>Alternatif</th>
+      <th>Mekanisme</th>
+      <th>Kelebihan</th>
+    </tr>
+    <tr>
+      <td>A — 50:50 sejak awal</td>
+      <td>Setelah settlement, sisa langsung dibagi dua.</td>
+      <td>Sederhana dan mudah dipahami.</td>
+    </tr>
+    <tr>
+      <td>B — Priority Capital Recovery</td>
+      <td>Bagian investor diarahkan terlebih dahulu untuk recovery modal.</td>
+      <td>Lebih menarik bagi investor CAPEX.</td>
+    </tr>
+  </table>
+
+  <div class="green-box">
+    <strong>Rekomendasi proposal:</strong>
+    gunakan Alternatif B sebagai dasar negosiasi,
+    tetapi persentase, urutan waterfall, batas recovery,
+    dan masa berlakunya harus dituangkan dalam term sheet.
+  </div>
+
+  <p class="small muted">
+    Proposal ini tidak menjanjikan tingkat pengembalian tertentu.
+    Recovery modal bergantung pada performa produksi, harga panen,
+    settlement integrator, biaya operasional dan jumlah cycle.
+  </p>
+
+</section>
+
+
+<!-- =========================================================
+     HALAMAN 12 — OWNERSHIP & GOVERNANCE
+========================================================= -->
+
+<section class="page">
+
+  <div class="section-kicker">11 — Ownership & Governance</div>
+  <h2>Kepemilikan Aset & Tata Kelola</h2>
+  <div class="rule"></div>
+
+  <h3>Kepemilikan Lahan</h3>
+
+  <div class="green-box">
+    <strong>Lahan tetap menjadi aset milik pemilik lahan.</strong>
+    Investasi tidak berarti pengalihan hak atas tanah kepada investor.
+  </div>
+
+  <h3>Kepemilikan Bangunan & Equipment</h3>
+
+  <p>
+    Karena investor membiayai pembangunan, status ekonomi bangunan,
+    equipment dan infrastruktur harus diatur secara eksplisit.
+    Tidak boleh dibiarkan menjadi area abu-abu.
+  </p>
+
+  <table>
+    <tr>
+      <th>Isu</th>
+      <th>Harus Disepakati</th>
+    </tr>
+    <tr>
+      <td>Selama masa kerja sama</td>
+      <td>Hak ekonomi investor atas aset investasi.</td>
+    </tr>
+    <tr>
+      <td>Akhir masa kerja sama</td>
+      <td>Perpanjangan, buyout atau mekanisme lainnya.</td>
+    </tr>
+    <tr>
+      <td>Pengakhiran lebih awal</td>
+      <td>Perhitungan nilai investasi yang belum pulih.</td>
+    </tr>
+    <tr>
+      <td>Equipment</td>
+      <td>Status kepemilikan dan hak pengambilannya.</td>
+    </tr>
+    <tr>
+      <td>Perawatan</td>
+      <td>Pihak yang bertanggung jawab atas maintenance.</td>
+    </tr>
+  </table>
+
+  <h3>Governance</h3>
+
+  <ul>
+    <li>Laporan produksi setiap cycle.</li>
+    <li>Settlement statement setiap panen.</li>
+    <li>Akses investor terhadap laporan keuangan proyek.</li>
+    <li>Persetujuan untuk pengeluaran non-rutin.</li>
+    <li>Evaluasi KPI secara berkala.</li>
+    <li>Dokumentasi semua keputusan material.</li>
+  </ul>
+
+  <div class="navy-box">
+    <h3>Prinsip Transparansi</h3>
+    <p>
+      Tidak boleh ada biaya proyek, potongan hasil panen,
+      pengeluaran investasi atau kewajiban pihak lain
+      yang dibebankan kepada proyek tanpa dasar perjanjian
+      yang dapat diperiksa.
+    </p>
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     HALAMAN 13 — RISK & MITIGATION
+========================================================= -->
+
+<section class="page">
+
+  <div class="section-kicker">12 — Risk Management</div>
+  <h2>Risiko & Mitigasi</h2>
+  <div class="rule"></div>
+
+  <table>
+    <tr>
+      <th>Risiko</th>
+      <th>Dampak</th>
+      <th>Mitigasi</th>
+    </tr>
+    <tr>
+      <td>Harga livebird turun</td>
+      <td>Margin menurun</td>
+      <td>Integrator/offtake, efisiensi produksi dan sensitivity analysis.</td>
+    </tr>
+    <tr>
+      <td>Mortalitas tinggi</td>
+      <td>Volume panen turun</td>
+      <td>Biosecurity, SOP dan technical service.</td>
+    </tr>
+    <tr>
+      <td>FCR buruk</td>
+      <td>Biaya pakan meningkat</td>
+      <td>Monitoring konsumsi dan KPI.</td>
+    </tr>
+    <tr>
+      <td>Gangguan listrik</td>
+      <td>Risiko performa/kematian</td>
+      <td>Backup power dan maintenance.</td>
+    </tr>
+    <tr>
+      <td>Investasi membengkak</td>
+      <td>Payback lebih lama</td>
+      <td>RAB, tender/vendor comparison dan milestone.</td>
+    </tr>
+    <tr>
+      <td>Settlement tidak transparan</td>
+      <td>Konflik antar pihak</td>
+      <td>Formula settlement tertulis dan settlement statement.</td>
+    </tr>
+    <tr>
+      <td>Partner berhenti</td>
+      <td>Operasional terganggu</td>
+      <td>Exit clause, replacement mechanism dan notice period.</td>
+    </tr>
+  </table>
+
+  <h3>Prinsip Investasi Bertahap</h3>
+
+  <p>
+    Investor tidak perlu langsung mengambil seluruh risiko.
+    Pencairan modal dapat dilakukan berdasarkan milestone:
+  </p>
+
+  <ol>
+    <li>Legal & technical due diligence selesai.</li>
+    <li>Kontrak integrator disepakati.</li>
+    <li>RAB final disetujui.</li>
+    <li>Ground preparation selesai.</li>
+    <li>Struktur kandang selesai.</li>
+    <li>Equipment terpasang dan diuji.</li>
+    <li>Commissioning selesai.</li>
+    <li>Cycle pertama dimulai.</li>
+  </ol>
+
+  <div class="warning">
+    <strong>No-Go Principle:</strong>
+    apabila kontrak integrator, settlement panen atau RAB final
+    tidak dapat diverifikasi, pembangunan sebaiknya ditunda
+    sampai informasi tersebut tersedia.
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     HALAMAN 14 — INVESTOR OFFER & DUE DILIGENCE
+========================================================= -->
+
+<section class="page">
+
+  <div class="section-kicker">13 — Investor Offer</div>
+  <h2>Penawaran kepada Investor / Pemodal</h2>
+  <div class="rule"></div>
+
+  <p class="lead">
+    Kami tidak menawarkan investasi berdasarkan janji keuntungan.
+    Kami menawarkan sebuah <strong>aset lahan + proyek produktif +
+    sistem operasional</strong> yang dapat diperiksa sebelum keputusan
+    investasi dibuat.
+  </p>
+
+  <div class="grid-2">
+
+    <div class="card">
+      <h3>Investor Mendapat</h3>
+      <ul>
+        <li>Akses investasi pada proyek berbasis aset nyata.</li>
+        <li>Tidak perlu membeli tanah.</li>
+        <li>Model operasional melalui integrator.</li>
+        <li>Hak ekonomi atas hasil proyek.</li>
+        <li>Mekanisme priority capital recovery.</li>
+        <li>Laporan produksi dan settlement.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Pemilik Menawarkan</h3>
+      <ul>
+        <li>Lahan ±8.110 m².</li>
+        <li>Komitmen kerja sama jangka panjang.</li>
+        <li>Keterbukaan terhadap due diligence.</li>
+        <li>Partisipasi pengawasan.</li>
+        <li>Tidak meminta investor membeli tanah.</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <h3 style="margin-top:7mm;">Checklist Due Diligence Investor</h3>
+
+  <table>
+    <tr>
+      <th>Dokumen / Verifikasi</th>
+      <th>Status</th>
+    </tr>
+    <tr>
+      <td>Legalitas lahan</td>
+      <td>Untuk diperiksa</td>
+    </tr>
+    <tr>
+      <td>Survey lokasi</td>
+      <td>Untuk dilakukan</td>
+    </tr>
+    <tr>
+      <td>RAB final</td>
+      <td>Untuk disusun</td>
+    </tr>
+    <tr>
+      <td>Penawaran vendor</td>
+      <td>Untuk dibandingkan</td>
+    </tr>
+    <tr>
+      <td>Kontrak Smartfarm/Integrator</td>
+      <td>Wajib diverifikasi</td>
+    </tr>
+    <tr>
+      <td>Formula settlement</td>
+      <td>Wajib tertulis</td>
+    </tr>
+    <tr>
+      <td>Financial model</td>
+      <td>Untuk disetujui</td>
+    </tr>
+    <tr>
+      <td>Perjanjian investasi</td>
+      <td>Untuk disusun secara hukum</td>
+    </tr>
+  </table>
+
+  <div class="green-box">
+    <strong>Target akhir:</strong>
+    investor memperoleh informasi yang cukup untuk mengatakan
+    <em>ya</em> atau <em>tidak</em> berdasarkan data,
+    bukan berdasarkan kepercayaan semata.
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     HALAMAN 15 — CLOSING & SIGNATURE
+========================================================= -->
+
+<section class="page">
+
+  <div class="section-kicker">14 — Closing</div>
+  <h2>Penutup & Langkah Berikutnya</h2>
+  <div class="rule"></div>
+
+  <p class="lead">
+    Proyek ini dibangun atas prinsip sederhana:
+    <strong>aset lahan tersedia, modal investor dibutuhkan,
+    dan sistem operasional peternakan dapat disediakan oleh
+    Smartfarm/Integrator.</strong>
+  </p>
+
+  <div class="navy-box">
+    <h3>Visi Kerja Sama</h3>
+    <p style="font-size:12pt;">
+      Investor tidak perlu membeli tanah.<br>
+      Pemilik lahan tidak perlu membiayai seluruh pembangunan kandang.<br>
+      Smartfarm tidak perlu membangun sistem kemitraan dari nol.<br><br>
+
+      Ketiga fungsi tersebut dipertemukan dalam satu proyek
+      peternakan produktif yang transparan dan terukur.
+    </p>
+  </div>
+
+  <h3 style="margin-top:8mm;">Langkah Berikutnya</h3>
+
+  <ol>
+    <li>Pertemuan dengan Smartfarm/Integrator.</li>
+    <li>Verifikasi program kemitraan dan settlement.</li>
+    <li>Survey lokasi ±8.110 m².</li>
+    <li>Penyusunan desain dan RAB final.</li>
+    <li>Investor due diligence.</li>
+    <li>Finalisasi term sheet.</li>
+    <li>Penyusunan perjanjian kerja sama.</li>
+    <li>Pembangunan Tahap I.</li>
+  </ol>
+
+  <div class="highlight">
+    <strong>Dokumen ini merupakan proposal penjajakan.</strong>
+    Seluruh angka, struktur pembayaran, pembagian hasil,
+    masa kerja sama, kepemilikan bangunan, pengembalian modal,
+    dan kewajiban para pihak harus dituangkan dalam perjanjian
+    definitif setelah due diligence.
+  </div>
+
+  <div class="signature">
+
+    <div class="signature-box">
+      <strong>PEMILIK LAHAN / PENGUSUL</strong>
+      Norman Sandhi<br>
+      Tanda tangan: __________________
+    </div>
+
+    <div class="signature-box">
+      <strong>CALON INVESTOR / PEMODAL</strong>
+      Nama: _________________________<br>
+      Tanda tangan: __________________
+    </div>
+
+    <div class="signature-box">
+      <strong>SMARTFARM / INTEGRATOR</strong>
+      Nama: _________________________<br>
+      Tanda tangan: __________________
+    </div>
+
+    <div class="signature-box">
+      <strong>SAKSI / PENASEHAT</strong>
+      Nama: _________________________<br>
+      Tanda tangan: __________________
+    </div>
+
+  </div>
+
+  <p class="center muted small" style="margin-top:9mm;">
+    SMARTFARM POULTRY PROJECT — ±8.110 m²<br>
+    Proposal Kemitraan & Investasi — Oktober 2026
+  </p>
+
+</section>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script>
+
+function printProposal(){
+  window.print();
+}
+
+document.addEventListener("keydown", function(event){
+
+  if((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === "p"){
+    event.preventDefault();
+    window.print();
+  }
+
+});
+
+</script>
+
+</body>
+</html> 
